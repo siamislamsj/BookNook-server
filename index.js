@@ -230,7 +230,7 @@ app.patch("/books/:id", verifyToken, async (req, res) => {
     });
   } catch (error) {
     console.error("Update book error:", error.message);
-    res.status(500).json({ message: "Failed to update book" });
+    res.status(500).json({ message: "Failed to update book info" });
   }
 });
 
